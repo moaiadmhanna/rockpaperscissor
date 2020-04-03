@@ -41,7 +41,7 @@ background: linear-gradient(52deg, rgba(0,6,36,1) 0%, rgba(9,9,121,0.79175420168
     #p2{
         color:white;
         position: absolute;
-        margin-left:1100px;
+        margin-left:1200px;
         margin-top: 350px;
         font-family:monospace;
         font-size: 32px;
@@ -252,10 +252,16 @@ background: linear-gradient(52deg, rgba(0,6,36,1) 0%, rgba(9,9,121,0.79175420168
             computerScore.innerHTML="computer score : " + cScore;
             
     }
-     
-
-     
-    }
+    return score()
+     }
+     function score(){
+         if(pScore===3||cScore===3){
+             x.innerHTML="please click restart ^ ";
+         }
+         else{
+             console.log("continue");
+         }
+     }
     
     
    
